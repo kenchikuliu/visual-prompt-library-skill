@@ -2,6 +2,15 @@ name: Publish to npm
 
 on:
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "Run a package dry-run or publish to npm"
+        required: true
+        default: "dry-run"
+        type: choice
+        options:
+          - dry-run
+          - publish
   release:
     types: [published]
 
@@ -37,11 +46,11 @@ jobs:
         run: npm publish --dry-run --access public
 
       - name: Publish with NPM_TOKEN
-        if: env.NPM_TOKEN != ''
+        if: (github.event_name == 'release' || inputs.mode == 'publish') && env.NPM_TOKEN != ''
         run: npm publish --access public --provenance
         env:
           NODE_AUTH_TOKEN: ${{ env.NPM_TOKEN }}
 
       - name: Publish with npm trusted publishing
-        if: env.NPM_TOKEN == ''
+        if: (github.event_name == 'release' || inputs.mode == 'publish') && env.NPM_TOKEN == ''
         run: npm publish --access public

@@ -36,8 +36,9 @@ This repository includes a GitHub Actions workflow at `.github/workflows/npm-pub
 
 Publishing options:
 
-- Add an `NPM_TOKEN` repository secret, then run **Publish to npm** manually or publish a GitHub Release.
-- Or configure npm trusted publishing for this repository and workflow, then run the same workflow without an npm token.
+- Run **Publish to npm** manually with `mode=dry-run` to verify package contents without credentials.
+- Add an `NPM_TOKEN` repository secret, then run **Publish to npm** with `mode=publish` or publish a GitHub Release.
+- Or configure npm trusted publishing for this repository and workflow, then run the same workflow with `mode=publish` without an npm token.
 
 Local checks before publishing:
 
