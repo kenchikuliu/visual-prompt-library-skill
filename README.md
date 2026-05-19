@@ -1,6 +1,8 @@
 # visual-prompt-library-skill
 
-Install the `visual-prompt-library` Codex skill with `npx`.
+Install the `visual-prompt-library` Codex skill with `npx`. It bundles a searchable prompt index for GPT Image 2 image prompts, EvoLinkAI image/API cases, Craftian video generation prompts, and image-to-video examples.
+
+Current public release: `v0.1.2`.
 
 From GitHub:
 
@@ -11,7 +13,7 @@ npx -y github:kenchikuliu/visual-prompt-library-skill
 From GitHub Release:
 
 ```bash
-npx -y https://github.com/kenchikuliu/visual-prompt-library-skill/releases/download/v0.1.1/visual-prompt-library-skill-0.1.1.tgz
+npx -y https://github.com/kenchikuliu/visual-prompt-library-skill/releases/download/v0.1.2/visual-prompt-library-skill-0.1.2.tgz
 ```
 
 After npm publishing, the shorter npm registry command is:
@@ -29,6 +31,14 @@ npx visual-prompt-library-skill --force
 npx visual-prompt-library-skill --target ~/.codex/skills
 npx visual-prompt-library-skill --dry-run
 ```
+
+## Verify
+
+```bash
+npm run check
+```
+
+The package currently includes 854 indexed prompt entries: 820 image prompts and 34 video prompts.
 
 ## Publishing
 

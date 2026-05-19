@@ -44,6 +44,9 @@ jobs:
           npm --version
           npm pkg get name version
 
+      - name: Check installer and prompt search
+        run: npm run check
+
       - name: Dry-run package contents
         run: npm publish --dry-run --access public
 
