@@ -21,6 +21,10 @@
     "prompt-library"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kenchikuliu/visual-prompt-library-skill.git"
