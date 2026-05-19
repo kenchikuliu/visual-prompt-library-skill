@@ -1,13 +1,13 @@
 {
   "name": "visual-prompt-library-skill",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Install the visual-prompt-library Codex skill with searchable image and video generation prompts.",
   "type": "module",
   "bin": {
     "visual-prompt-library-skill": "bin/install.mjs"
   },
   "scripts": {
-    "check": "node bin/install.mjs --dry-run && node skill/visual-prompt-library/scripts/search-prompts.mjs --stats && node skill/visual-prompt-library/scripts/search-prompts.mjs \"travel vlog\" --kind video --limit 2 --json",
+    "check": "node bin/install.mjs --dry-run && node skill/visual-prompt-library/scripts/search-prompts.mjs --stats && node skill/visual-prompt-library/scripts/search-prompts.mjs \"travel vlog\" --kind video --limit 2",
     "pack:dry-run": "npm publish --dry-run --access public"
   },
   "files": [
