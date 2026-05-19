@@ -1,0 +1,28 @@
+{
+  "name": "visual-prompt-library-skill",
+  "version": "0.1.0",
+  "description": "npx installer for the visual-prompt-library Codex skill.",
+  "type": "module",
+  "bin": {
+    "visual-prompt-library-skill": "bin/install.mjs"
+  },
+  "files": [
+    "bin",
+    "skill"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "codex-skill",
+    "visual-prompts",
+    "gpt-image-2",
+    "video-prompts",
+    "prompt-library"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenchikuliu/visual-prompt-library-skill.git"
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Visual Prompt Library"
+  short_description: "Search image and video prompt examples"
+  default_prompt: "Use $visual-prompt-library to find reusable image or video generation prompts for a product ad."
