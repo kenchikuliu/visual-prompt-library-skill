@@ -11,7 +11,7 @@ npx -y github:kenchikuliu/visual-prompt-library-skill
 From GitHub Release:
 
 ```bash
-npx -y https://github.com/kenchikuliu/visual-prompt-library-skill/releases/download/v0.1.0/visual-prompt-library-skill-0.1.0.tgz
+npx -y https://github.com/kenchikuliu/visual-prompt-library-skill/releases/download/v0.1.1/visual-prompt-library-skill-0.1.1.tgz
 ```
 
 After npm publishing, the shorter npm registry command is:
@@ -38,7 +38,8 @@ Publishing options:
 
 - Run **Publish to npm** manually with `mode=dry-run` to verify package contents without credentials.
 - Add an `NPM_TOKEN` repository secret, then run **Publish to npm** with `mode=publish` or publish a GitHub Release.
-- Or configure npm trusted publishing for this repository and workflow, then run the same workflow with `mode=publish` without an npm token.
+- Or configure npm trusted publishing for this repository and workflow, set repository variable `NPM_TRUSTED_PUBLISHING=true`, then run the workflow with `mode=publish` or publish a GitHub Release without an npm token.
+- Without either credential path, release-triggered runs only validate the package and skip npm publishing.
 
 Local checks before publishing:
 

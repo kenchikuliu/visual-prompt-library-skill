@@ -1,6 +1,6 @@
 {
   "name": "visual-prompt-library-skill",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "npx installer for the visual-prompt-library Codex skill.",
   "type": "module",
   "bin": {
